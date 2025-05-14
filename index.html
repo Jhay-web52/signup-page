@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SignUp Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="right">
+        <img src="Logo.png" alt="icon" />
+        <h2>For Individuals</h2>
+        <p>
+          Start benefiting from the wellness experience. For <br />
+          companies looking on increasing productivity, and improving <br />
+          organization wellness.
+        </p>
+      </main>
+
+      <div class="left">
+        <div class="grid">
+          <form id="registrationForm" action="#">
+            <div class="split">
+              <div>
+                <p class="paragraph">First Name</p>
+                <input type="text" id="Firstname" name="firstname" />
+              </div>
+
+              <div>
+                <p class="paragraph">Last Name</p>
+                <input type="text" id="Lastname" name="lastname" />
+              </div>
+
+              <div>
+                <p class="paragraph">Gender</p>
+                <select id="gender" name="gender">
+                  <option value="select">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <p class="paragraph">Date of Birth</p>
+                <input type="date" id="dateofbirth" name="dateofbirth" />
+              </div>
+
+              <div>
+                <p class="paragraph">Weight (KG)</p>
+                <input type="number" id="weight" name="weight" />
+              </div>
+
+              <div>
+                <p class="paragraph">Height (CM)</p>
+                <input type="number" id="height" name="height" />
+              </div>
+            </div>
+
+            <p class="paragraph">Activity Level</p>
+            <select id="activitylevel" name="activitylevel">
+              <option value="select">Select</option>
+              <option value="sedentary">Sedentary</option>
+              <option value="lightlyactive">Lightly Active</option>
+              <option value="moderatelyactive">Moderately Active</option>
+              <option value="veryactive">Very Active</option>
+              <option value="superactive">Super Active</option>
+            </select>
+
+            <p class="paragraph">Password</p>
+            <input type="password" id="password" name="password" />
+
+            <button type="submit">Register</button>
+
+            <footer>
+              By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
